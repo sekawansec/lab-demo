@@ -1,8 +1,10 @@
 FROM python:3.9.20-alpine3.20
 
-WORKDIR /website
 
+COPY ./website /website
 COPY .git /website/.git
+
+WORKDIR /website
 
 EXPOSE 9001
 
